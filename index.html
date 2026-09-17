@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پیش‌بینی قیمت منزل | پروژه یادگیری ماشین</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  }
+  h1 {
+    color: #764ba2;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+  }
+  h2 {
+    color: #667eea;
+    font-size: 1.4em;
+    margin: 25px 0 15px;
+    border-right: 4px solid #667eea;
+    padding-right: 12px;
+  }
+  p { line-height: 1.8; color: #444; margin-bottom: 12px; }
+  ul { padding-right: 25px; line-height: 2; color: #444; }
+  .badges {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+  .badge {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  .card {
+    background: #f7f8fc;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px 0;
+    border-right: 4px solid #667eea;
+  }
+  .result {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .result .price {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  .btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 5px;
+    transition: transform 0.2s;
+  }
+  .btn:hover { transform: scale(1.05); }
+  .center { text-align: center; margin-top: 30px; }
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    color: #888;
+    font-size: 0.9em;
+  }
+  footer a { color: #667eea; text-decoration: none; }
+  code {
+    background: #2d2d2d;
+    color: #f8f8f2;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    direction: ltr;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>🏠 پیش‌بینی قیمت منزل</h1>
+  <p class="subtitle">پروژه یادگیری ماشین بر اساس ویژگی‌های ملک</p>
+
+  <div class="badges">
+    <span class="badge">Python 3.13</span>
+    <span class="badge">scikit-learn</span>
+    <span class="badge">pandas</span>
+    <span class="badge">Machine Learning</span>
+  </div>
+
+  <h2>📌 درباره پروژه</h2>
+  <p>
+    در این پروژه از دو مدل پیش‌بینی‌کننده <b>Linear Regression</b> و 
+    <b>Random Forest</b> استفاده شده و نتیجه این دو مدل با هم مقایسه شده‌اند.
+  </p>
+
+  <h2>📊 ویژگی‌های داده</h2>
+  <div class="card">
+    <ul>
+      <li>نام محله</li>
+      <li>متراژ</li>
+      <li>تعداد اتاق</li>
+      <li>تعداد سرویس</li>
+      <li>پارکینگ</li>
+      <li>انباری</li>
+      <li>آسانسور</li>
+      <li>بالکن</li>
+      <li>کابینت</li>
+      <li>سال ساخت</li>
+      <li>قیمت (متغیر هدف)</li>
+    </ul>
+  </div>
+
+  <h2>🔧 مراحل کار</h2>
+  <ul>
+    <li>پاکسازی داده‌ها</li>
+    <li>ساخت مدل‌ها</li>
+    <li>آموزش مدل‌ها</li>
+    <li>بررسی نتیجه‌ها</li>
+    <li>اضافه کردن یک داده برای پیش‌بینی</li>
+  </ul>
+
+  <h2>📈 نمونه پیش‌بینی</h2>
+  <div class="card">
+    <p><b>ورودی:</b> شهرک ولیعصر، ۱۰۰ متر، ۲ خواب، پارکینگ، انباری، آسانسور، طبقه ۲، سال ۱۴۰۰</p>
+  </div>
+  <div class="result">
+    💰 قیمت پیش‌بینی‌شده:
+    <div class="price">۶,۲۳۴,۰۰۰,۰۰۰ تومان</div>
+  </div>
+
+  <h2>💡 پیشنهاد</h2>
+  <p>
+    چون بنده با گوشی این کدها را زدم و این نسخه پایتون به مدل 
+    <code>XGBoost</code> دسترسی نداشت، خواننده می‌تواند این مدل را اضافه 
+    کرده و با نتایج مدل‌های دیگر مقایسه کند.
+  </p>
+
+  <div class="center">
+    <a href="https://github.com/akhlaqi1381-prog/house-price-prediction" class="btn">
+      📂 مشاهده در گیت‌هاب
+    </a>
+    <a href="https://github.com/akhlaqi1381-prog/house-price-prediction/blob/main/house_price_prediction.ipynb" class="btn">
+      📓 فایل نوت‌برگ
+    </a>
+  </div>
+
+  <footer>
+    ساخته‌شده با ❤️ توسط 
+    <a href="https://github.com/akhlaqi1381-prog">akhlaqi1381-prog</a>
+  </footer>
+
+</div>
+</body>
+</html>
