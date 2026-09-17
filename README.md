@@ -19,21 +19,21 @@
 رو با Cv ترکیب کنم و ایده جالبی بود برای داده های زیاد
 شاید خیلی به درد بخوره
 چون در محیط خطی بودیم از ارزیابی عملکرد های
-# MAE,RMSE,R2
+MAE,RMSE,R2
 استفاده شد
-فایل ها
-#(house-price-prediction/
+فایل ها #
+house-price-prediction/
 house_price_prediction.ipynb
 README.md
 requirements.txt
-gitignore)
-ابزار ها
-#(Python 3.13
+gitignore
+ابزار ها # 
+Python 3.13
 pandas
 numpy
 scikit-learn
-Jupyter Notebook)
-پیشنهادات
+Jupyter Notebook
+پیشنهادات #
 چون بنده با گوشی این کد هارو زدم و این نسخه پایتون
 به مدل XGboost
 دسترسی نداشت 
