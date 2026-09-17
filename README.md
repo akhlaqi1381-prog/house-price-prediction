@@ -37,12 +37,11 @@
 
 ## فایل‌ها
 
-house-price-prediction/
-│
-├── house_price_prediction.ipynb
-├── README.md
-├── requirements.txt
-└── .gitignore
+- house-price-prediction/
+- house_price_prediction.ipynb
+- README.md
+- requirements.txt
+- gitignore
 
 ابزارها
 
@@ -63,8 +62,11 @@ house-price-prediction/
 - GitHub: [akhlaqi1381-prog](https://github.com/akhlaqi1381-prog)
 
 اگه نظری، پیشنهادی یا ایده‌ای داشتی خوشحال می‌شم بشنوم. ⭐
-```
+
 امین اخلاقی
+```
 
 
+
+ 
  
