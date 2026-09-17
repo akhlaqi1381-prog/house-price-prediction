@@ -2,7 +2,8 @@
 پیش بینی قیمت منزل
 پروژه ساده یادگیری ماشین بر اساس ویژگی های 
 پیشرفته
-در این پروژه از دو مدل پیش بینی کننده Linear Regressio و Random Forest 
+در این پروژه از دو مدل پیش بینی کننده
+ Linear Regressio و Random Forest 
 استفاده شده است و نتیجه این دو مدل باهم نیز مقایسه شده اند
 داده های من 
 شامل (نام محله،متزاژ،تعداد اتاق،تعداد سرویس،پارکینگ،انباری،اسانسور،بالکن،کابینت،سال ساخت،قیمت)
@@ -21,11 +22,10 @@
 استفاده شد
 فایل ها
 house-price-prediction/
-│
-├── house_price_prediction.ipynb
-├── README.md
-├── requirements.txt
-└── .gitignore
+house_price_prediction.ipynb
+README.md
+requirements.txt
+gitignore
 ابزار ها
 Python 3.13
 pandas
